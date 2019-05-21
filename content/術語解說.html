@@ -147,87 +147,16 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">各種程式範例 << <a href='各種程式範例.html'>Previous</a> <a href='Python 程式碼.html'>Next</a> >> Python 程式碼<br /><h1>Java 程式碼</h1>
-<pre class="brush:java;auto-links:false;toolbar:false" contenteditable="false">import java.util.Scanner;
-
-public class Life {
-    public static void show(boolean[][] grid){
-        String s = "";
-        for(boolean[] row : grid){
-            for(boolean val : row)
-                if(val)
-                    s += "*";
-                else
-                    s += ".";
-            s += "\n";
-        }
-        System.out.println(s);
-    }
-    
-    public static boolean[][] gen(){
-        boolean[][] grid = new boolean[10][10];
-        for(int r = 0; r &lt; 10; r++)
-            for(int c = 0; c &lt; 10; c++)
-                if( Math.random() &gt; 0.7 )
-                    grid[r][c] = true;
-        return grid;
-    }
-    
-    public static void main(String[] args){
-        boolean[][] world = gen();
-        show(world);
-        System.out.println();
-        world = nextGen(world);
-        show(world);
-        Scanner s = new Scanner(System.in);
-        while(s.nextLine().length() == 0){
-            System.out.println();
-            world = nextGen(world);
-            show(world);
-            
-        }
-    }
-    
-    public static boolean[][] nextGen(boolean[][] world){
-        boolean[][] newWorld 
-            = new boolean[world.length][world[0].length];
-        int num;
-        for(int r = 0; r &lt; world.length; r++){
-            for(int c = 0; c &lt; world[0].length; c++){
-                num = numNeighbors(world, r, c);
-                if( occupiedNext(num, world[r][c]) )
-                    newWorld[r][c] = true;
-            }
-        }
-        return newWorld;
-    }
-    
-    public static boolean occupiedNext(int numNeighbors, boolean occupied){
-        if( occupied &amp;&amp; (numNeighbors == 2 || numNeighbors == 3))
-            return true;
-        else if (!occupied &amp;&amp; numNeighbors == 3)
-            return true;
-        else
-            return false;
-    }
-
-    private static int numNeighbors(boolean[][] world, int row, int col) {
-        int num = world[row][col] ? -1 : 0;
-        for(int r = row - 1; r &lt;= row + 1; r++)
-            for(int c = col - 1; c &lt;= col + 1; c++)
-                if( inbounds(world, r, c) &amp;&amp; world[r][c] )
-                    num++;
-
-        return num;
-    }
-
-    private static boolean inbounds(boolean[][] world, int r, int c) {
-        return r &gt;= 0 &amp;&amp; r &lt; world.length &amp;&amp; c &gt;= 0 &amp;&amp;
-        c &lt; world[0].length;
-    }
-
-}</pre>
-<p></p><br />各種程式範例 << <a href='各種程式範例.html'>Previous</a> <a href='Python 程式碼.html'>Next</a> >> Python 程式碼</div>
+    <div id="tipue_search_content">Python簡介 << <a href='Python簡介.html'>Previous</a> <a href='History of Python.html'>Next</a> >> History of Python<br /><h1>術語解說</h1>
+<p><span style="color: #ff0000;">編譯器</span></p>
+<p>將程式碼編譯為機器碼，再加以執行，用編譯語言寫成的程式，在執行期的執行速度，通常比用直譯語言寫的程式快。因為程式在編譯期，已經被預先編譯成機器碼，可以直接執行。</p>
+<p><span style="color: #ff0000;">直譯語言</span></p>
+<p>直譯語言是一種程式語言，會將程式碼一句一句直接執行，不需要像編譯語言一樣，經過編譯器先行編譯為機器碼，之後再執行。</p>
+<p><span style="color: #ff0000;">高階程式語言</span></p>
+<p>是高度封裝了的程式語言。以人類的日常語言為基礎的一種程式語言，使用一般人易於接受的文字來表示，有較高的可讀性，以方便對電腦認知較淺的人亦可以大概明白其內容。</p>
+<p><span style="color: #ff0000;">低階程式語言</span></p>
+<p>為電腦科學相關的術語，指的是一類電腦程式語言。它很少提供或不提供電腦的指令集體系結構-&gt;也就是語言對映中與處理器指令緊密相關的命令或函式。</p>
+<br />Python簡介 << <a href='Python簡介.html'>Previous</a> <a href='History of Python.html'>Next</a> >> History of Python</div>
         
     <!-- footer -->
       <div class="container">

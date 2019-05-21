@@ -147,87 +147,11 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">各種程式範例 << <a href='各種程式範例.html'>Previous</a> <a href='Python 程式碼.html'>Next</a> >> Python 程式碼<br /><h1>Java 程式碼</h1>
-<pre class="brush:java;auto-links:false;toolbar:false" contenteditable="false">import java.util.Scanner;
-
-public class Life {
-    public static void show(boolean[][] grid){
-        String s = "";
-        for(boolean[] row : grid){
-            for(boolean val : row)
-                if(val)
-                    s += "*";
-                else
-                    s += ".";
-            s += "\n";
-        }
-        System.out.println(s);
-    }
-    
-    public static boolean[][] gen(){
-        boolean[][] grid = new boolean[10][10];
-        for(int r = 0; r &lt; 10; r++)
-            for(int c = 0; c &lt; 10; c++)
-                if( Math.random() &gt; 0.7 )
-                    grid[r][c] = true;
-        return grid;
-    }
-    
-    public static void main(String[] args){
-        boolean[][] world = gen();
-        show(world);
-        System.out.println();
-        world = nextGen(world);
-        show(world);
-        Scanner s = new Scanner(System.in);
-        while(s.nextLine().length() == 0){
-            System.out.println();
-            world = nextGen(world);
-            show(world);
-            
-        }
-    }
-    
-    public static boolean[][] nextGen(boolean[][] world){
-        boolean[][] newWorld 
-            = new boolean[world.length][world[0].length];
-        int num;
-        for(int r = 0; r &lt; world.length; r++){
-            for(int c = 0; c &lt; world[0].length; c++){
-                num = numNeighbors(world, r, c);
-                if( occupiedNext(num, world[r][c]) )
-                    newWorld[r][c] = true;
-            }
-        }
-        return newWorld;
-    }
-    
-    public static boolean occupiedNext(int numNeighbors, boolean occupied){
-        if( occupied &amp;&amp; (numNeighbors == 2 || numNeighbors == 3))
-            return true;
-        else if (!occupied &amp;&amp; numNeighbors == 3)
-            return true;
-        else
-            return false;
-    }
-
-    private static int numNeighbors(boolean[][] world, int row, int col) {
-        int num = world[row][col] ? -1 : 0;
-        for(int r = row - 1; r &lt;= row + 1; r++)
-            for(int c = col - 1; c &lt;= col + 1; c++)
-                if( inbounds(world, r, c) &amp;&amp; world[r][c] )
-                    num++;
-
-        return num;
-    }
-
-    private static boolean inbounds(boolean[][] world, int r, int c) {
-        return r &gt;= 0 &amp;&amp; r &lt; world.length &amp;&amp; c &gt;= 0 &amp;&amp;
-        c &lt; world[0].length;
-    }
-
-}</pre>
-<p></p><br />各種程式範例 << <a href='各種程式範例.html'>Previous</a> <a href='Python 程式碼.html'>Next</a> >> Python 程式碼</div>
+    <div id="tipue_search_content">CMSimfly介紹 << <a href='CMSimfly介紹.html'>Previous</a> <a href='Python簡介.html'>Next</a> >> Python簡介<br /><h1>版本</h1>
+<p>CMSimfly 目前使用 Syntaxhighlighter 3.0.83:</p>
+<p> <a href="http://alexgorbatchev.com/SyntaxHighlighter/">http://alexgorbatchev.com/SyntaxHighlighter/</a> </p>
+<p>進行頁面中的程式碼高亮顯示.</p>
+<br />CMSimfly介紹 << <a href='CMSimfly介紹.html'>Previous</a> <a href='Python簡介.html'>Next</a> >> Python簡介</div>
         
     <!-- footer -->
       <div class="container">
