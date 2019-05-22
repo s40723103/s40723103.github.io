@@ -72,11 +72,18 @@
 <p><span><span><span><span><img alt="" height="235" src="/images/151515.png" width="500"/></span></span></span></span></p>
 <h2>更新倉儲改版</h2>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/ale9u-cqaTo" width="500"></iframe></p>
-<p>1.先個別clone下來兩個需將合併的倉儲。</p>
-<p>2.之後複製貼上需要更新的資料並蓋過，即可完成。</p>
-<h2>找尋倉儲網址</h2>
-<p>1.在倉儲setting裡可更改。</p>
-<p>2.之後變更完成即可找到倉儲網址。</p><h1>程式操作運用</h1>
+<p>1.<span style="color: #ff9900;">先個別clone下來兩個需將合併的倉儲。</span></p>
+<p><span style="color: #000000;">一.先下載新版倉儲資訊。</span></p>
+<p><span style="color: #ff9900;"><img alt="" height="129" src="/images/151515.png" width="600"/></span></p>
+<p>二.再下載自己的倉儲。</p>
+<p><img alt="" height="131" src="/images/161616.png" width="600"/></p>
+<p>2.<span style="color: #ff9900;">之後複製貼上需要更新的資料並蓋</span><span style="color: #ff9900;">過，即可完成。</span></p>
+<p><span style="color: #ff9900;"><img alt="" height="285" src="/images/171717.png" width="600"/></span></p>
+<p><span style="color: #ff0000;">*補</span>:<span style="color: #ff6600;">原本倉儲中config目錄不須被覆蓋，因為裡面的資料是在倉儲中所有變動的紀錄，假設被新版倉儲覆蓋將會遺失所有更改資料。</span></p><h2>找尋倉儲網址</h2>
+<p>1.<span style="color: #ff6600;">在倉儲setting裡可更改。</span></p>
+<p><img alt="" height="282" src="/images/chrome_2019-05-22_17-22-55.png" width="600"/></p>
+<p>2.<span style="color: #ff6600;">之後變更完成即可找到倉儲網址。</span></p>
+<p><img alt="" height="282" src="/images/chrome_2019-05-22_17-23-15.png" width="600"/></p><h1>程式操作運用</h1>
 <p><img alt="" height="503" src="/images/111111.png" width="800"/></p>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/srcm_CiWVtI" width="500"></iframe></p>
 <p><span>1.</span><span style="color: #ff6600;">先到mde.tw之<a href="https://2019wcm.blogspot.com/" style="color: #ff6600;">網際內容管理網誌</a>點選<a href="https://drive.google.com/open?id=1_TQBw1PM7jxrmtsBjvLKbjJWfGs8Ug79" style="color: #ff6600;">20</a><a href="https://drive.google.com/open?id=1_TQBw1PM7jxrmtsBjvLKbjJWfGs8Ug79" style="color: #ff6600;">19_cdb_w5.7z</a> 下載</span></p>
@@ -519,15 +526,14 @@ print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
 &lt;/html&gt;
 COPY TO CLIPBOARD	</pre>
 <p></p><h1>修正錯誤</h1>
-<p><img alt="" height="364" src="/images/999.png" width="599"/></p>
+<p><br/><br/><img alt="" height="364" src="/images/999.png" width="599"/><b>期中問題</b></p>
 <p><b>1.</b><span style="color: #ff6600;"><b>單機與網路差別</b></span></p>
 <p>   單機之資料庫只供本機使用，網路之資料庫為透過區域網路設定可供多人共用。</p>
 <p><b>2</b><b>.</b><span style="color: #ff6600;"><b>為什麼協同反而無法取得正確近端</b></span></p>
 <p> 因為協同後，需要pull request才能真正取得倉儲之近端，在指令馬中打git pull，即可將近端</p>
 <p> 遠端統合， 便可把資料push上去。</p>
 <p><b>3.</b><span style="color: #ff6600;"><b>兩個人同時</b><b>用近端</b><b>並同時上傳檔案，但有合併衝突怎麼辦</b></span></p>
-<p> 先將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 </p>
-<p>合處 (=======)後，儲存並重新進入近端，將之轉成Generapage，最後git add .  gitcommit</p>
+<p> 先將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 合處 (=======)後，儲存並重新進入近端，將之轉成Generapage，最後git add .  gitcommit</p>
 <p>   git push。</p>
 <p><b>4</b><b>.</b><span style="color: #ff6600;"><b>為什麼倉儲會突然找不到網頁，但在遠端還可以看到</b></span></p>
 <p>有可能是因為檔案中又包住另一個git clone 下來的資料，造成程式碼衝突，因而，使得變成404網頁。</p>
@@ -543,16 +549,131 @@ COPY TO CLIPBOARD	</pre>
 <p><span style="color: #ff0000;">Git diff</span> (查看修改的文檔內容)</p>
 <p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p>
 <p><span style="color: #ff0000;">Git stash</span>(將寫到一半的代碼從工作區拿走存起來)</p>
-<p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p><h1>網誌編輯</h1>
-<p>CMSimfly 採用 <a href="https://blog.getpelican.com/">Pelican blog</a> 系統, 編輯檔案位於 config/pelican.leo, 對應的</p>
-<p> Markdown 原始檔案位於 markdown 目錄中, 而經 Pelican 轉換出的網誌超文件檔案則位於 blog 目錄中.</p>
-<p>執行 Pelican 之前, 必須先安裝下列模組:</p>
-<p style="padding-left: 30px;">pip install pelican Markdown</p>
-<p>其餘在網誌文章中所需要的 Javascript 或 Brython 程式檔案, 則與 CMSimfly 及 Reveal.js 共用, 位於 static 目錄下.</p>
-<p>上傳檔案與圖檔的引用則與 CMSimfly 架構相同.</p><h1>已知錯誤</h1>
+<p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p>
+<p>期末問題</p>
+<p>1.<span style="color: #ff6600;">新版與舊版倉儲產生倉儲</span></p>
+<p>將舊版倉儲一律改版成新版，在原先舊版資料檔中保存config目錄，之後將新版倉儲資料複製撇除git檔全部覆蓋後，重新進入近端推送變更資料後即可解決衝突問題。</p>
+<p><span style="color: #ff0000;">補:假如沒有去做更新改版的動作，可能會導致資料推送不完整或是push不上去的問題。</span></p>
+<p><span style="color: #ff0000;">可參考以下影片操作</span></p>
+<p><span style="color: #ff0000;"><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/ale9u-cqaTo" width="600"></iframe></span></p>
+<p>2.<span style="color: #ff6600;">資料推送不上去</span></p>
+<p><span style="color: #ff6600;"><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/WsSrPQftyN8" width="600"></iframe></span></p>
+<p>可參考以下應片來解決，最有影響的部分可能在於近端遠端沒有做統一彙整成一樣的，導致資訊核對時產生錯誤，應使用git pull解決，之後再確認其他部分是否成立，並commit，即可解決此問題。</p>
+<p><img alt="" height="178" src="/images/191919.png" width="600"/></p>
+<p>(圖為push產生問題範例)</p>
+<p>3.<span style="color: #ff6600;">組別倉儲在推送後其他組員也剛好在改版，因而產生版面衝突</span></p>
+<p>在新版推送完畢後，組員使用舊版要推送之時產生衝突，會有一些指示建議你，大概會使用到....</p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">git pull</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">git commit</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">git status</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">git add .</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">git merge</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">這些指令會一直無限循環到推送完成。</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;"><img alt="" height="282" src="/images/181818.png" width="600"/></span></span></p>
+<p>將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 合處 (=======)後儲存，<span style="color: #ff6600;"><span style="color: #000000;">之後再次確認是否改版，進入近端查看發現會有一些地方重複而產生錯誤版面，去編輯將重複的資訊刪除再重新推送，即可完成最新版的倉儲。</span></span></p>
+<p><span style="color: #ff6600;"><span style="color: #000000;">4.<span style="color: #ff6600;">資料上傳不上去導至網頁錯誤的原因</span></span></span></p>
+<p>Y:\&gt;cd project</p>
+<p>Y:\project&gt;dir</p>
+<p>Y:\project&gt;cd cmstest&gt;更換目錄到contest</p>
+<p><span data-blogger-escaped-style="background-color: white;">Y:\project\cmstest&gt;python wsgi.py</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">進入address可改版，一˙但改版可進行版次推送</span></p>
+<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">Login完week2打入根據[...網址...]完成ungit的配置，按github page，回到ungit網頁，push上去。</span></p>
+<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">假如網頁出現錯誤:</span></p>
+<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">由於沒有在Home底下有對應的git config</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">Home(外部)    Home_cadlab(內部)</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">先檢查有無gitconfig!</span></p><h1>進階挑戰</h1>
+<p>挑戰更加困難也繁瑣的操作.</p>
+<p><img alt="" height="400" src="/images/.pic-36.jpg" width="652"/></p>
+<p>.</p><h2>設定路徑說明</h2>
+<h4><span style="color: #ff6600;">導入ungit</span></h4>
+<p><span data-blogger-escaped-style="background-color: white;">nodejs裡面有ungit-&gt;程式為nodejs所寫，nodejs位置在</span><span data-blogger-escaped-style="background-color: #fff2cc;">appdata-&gt;roming-&gt;npm-&gt;ungi</span><span data-blogger-escaped-style="background-color: white;"> 。</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">程式碼在appdata-&gt;roming-&gt;npm-&gt;node-modules-&gt;ungit-&gt;CHANGELOG.md。</span></p>
+<p><b data-blogger-escaped-style="background-color: #ea9999;"> </b></p>
+<h4><span style="color: #ff6600;"><b data-blogger-escaped-style="background-color: #d9ead3;">start.bat跟start.cadlab.bat差別</b></span></h4>
+<p><span data-blogger-escaped-style="background-color: white;" style="color: #ff0000;">因Home位置不同，適用範圍有所不同!!</span></p>
+<p><span data-blogger-escaped-style="background-color: white;" style="color: #ff0000;">start.bat=&gt;學校外適用。</span></p>
+<p><span data-blogger-escaped-style="background-color: white;" style="color: #ff0000;">start.cadlab.bat=&gt;學校內適用，不能使用在學校外的地方。</span></p>
+<p></p>
+<h4><span data-blogger-escaped-style="background-color: #d9ead3;" style="color: #ff6600;">STAPE1</span></h4>
+<p></p>
+<p><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">1</span>.設定路徑=&gt;</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">    set path8=%Disk%:\nodejs;%Disk%:\nodejs\appdata\roaming\npm;放置到start.cadlab的sciTE裡      的path7後。</span></p>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">2</span>.將 path8 納入 path 設定=&gt;</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">    %path8%；-&gt;讓nodejs.ungit直行即可使用。</span></p>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">    在同上步驟中的sciTE中有path程式碼將%path8%；直接放在最後方。</span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"> </span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">3</span>.分別start.bat跟start.cadlab.bat都如上兩步驟操作並儲存。</span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"> </span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">4</span>.按start.cadlab.bat打入ungit可作執行，之後出現頁面表示設定成功，按允許儲存，再將跳出        的網頁關掉。</span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"> </span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">5</span>.針對nodejs設定路徑=&gt;</span></p>
+</div>
+<div data-blogger-escaped-style="text-align: left;">
+<p><span data-blogger-escaped-style="background-color: white;">    [set. USERPROFILE=%Disk%:\home]start.cadlab.bat中需加入以上程式碼                在 set.HOME=%Disk%:\home-cadlab之下方增加。</span></p>
+</div>
+<div data-blogger-escaped-style="text-align: left;">
+<p><span data-blogger-escaped-style="background-color: white;">  *將以上程式關掉(剛才使用的程式碼還不用關。若關掉，kmol-2019-&gt;data-&gt;scite-&gt;bin-&gt;按          scite黑色圓點。</span></p>
+</div>
+<div data-blogger-escaped-style="text-align: left;">
+<p><span data-blogger-escaped-style="background-color: white;">以便能作動，因nodejs系統user的路徑找git的設定檔，但找不到，又因為需變為可攜程式，必須透過上述方式來作動!!</span></p>
+</div>
+<div data-blogger-escaped-style="text-align: left;">
+<p><span data-blogger-escaped-style="background-color: white;"><span style="color: #ff0000;">6</span>.start.bat也是上述步驟重複一遍。完成初步動作。。。。。</span></p>
+</div>
+<h4><span data-blogger-escaped-style="background-color: #d9ead3;" style="color: #ff6600;">STAPE2</span></h4>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">可在mde.tw中2019 spring...裡，實習任務之任務2有明確步驟可找到下面的程式。</span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">ungit --launchBrowser=0 --launchCommand "C:\PROGRA~2\Google\Chrome\Application\chrome.exe  %U"</span></p>
+</div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">需使用簡寫，不然無法啟動。並新建批次檔。</span></p>
+<h2>新建批次檔步驟</h2>
+<p>Q<span style="color: #ff6600;">如何建立批次檔</span>?</p>
+<p></p>
+<p><span style="color: #ff6600;">Step1</span>；去SciTe新建檔案&gt;將程式複製貼上 &gt;Save as 在隨身碟Y槽</p>
+<p>     </p>
+<p>             [為了與ungit作區別，因此將其名稱為kungit.bat]&gt;從可攜home找出對應的git</p>
+<p>              設定</p>
+<p></p>
+<p><span style="color: #ff6600;">Step2</span>:去隨身碟Y槽&gt;home&gt;查看有無git設定&gt;沒有的話測試程式碼能否運作&gt;git clone測試網頁</p>
+<p></p>
+<p>打開ungit在CMS下面的各時間提交之內容&gt;[進入測試網頁&gt;打kungit指令]</p>
+<p>       </p>
+<p>           <span style="color: #ff0000;">條件</span>:  1.必須在某個git倉儲下指令(cd....)&gt;目的為由Chrom開啟</p>
+<p></p>
+<p>                      2.必須啟動ungit對應的的\批次檔。</p>
+<p>             為了確保關閉nodejs不干擾運作，下載process explorer ，取64....的Z複製下來，貼在y槽以便隨時關閉程式。</p>
+<p>找到在最下面的綠色node按右鍵kill process&gt;把nodejs上次對應的8443的批次檔關閉，指令便可正常運作。(即可不會抱怨。)</p>
+<p>刪除nodejs之8443的批號後，重新打入kungit指令即可看到ungit網頁跳出。</p>
+<p>             </p>
+<div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">    </span></p>
+<p></p>
+<p>         </p>
+<p>         </p>
+</div>
+</div>
+<p></p><h1>已知錯誤</h1>
 <h4>全部頁面會因無法正確解讀而誤刪</h4>
 <p>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
 <h4>頁面標題不支援特殊符號</h4>
 <p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
-<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
+<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p></div></div>

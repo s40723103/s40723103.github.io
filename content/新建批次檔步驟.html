@@ -147,63 +147,34 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">Html 原始碼 << <a href='Html 原始碼.html'>Previous</a> <a href='進階挑戰.html'>Next</a> >> 進階挑戰<br /><h1>修正錯誤</h1>
-<p><br/><br/><img alt="" height="364" src="./../images/999.png" width="599"/><b>期中問題</b></p>
-<p><b>1.</b><span style="color: #ff6600;"><b>單機與網路差別</b></span></p>
-<p>   單機之資料庫只供本機使用，網路之資料庫為透過區域網路設定可供多人共用。</p>
-<p><b>2</b><b>.</b><span style="color: #ff6600;"><b>為什麼協同反而無法取得正確近端</b></span></p>
-<p> 因為協同後，需要pull request才能真正取得倉儲之近端，在指令馬中打git pull，即可將近端</p>
-<p> 遠端統合， 便可把資料push上去。</p>
-<p><b>3.</b><span style="color: #ff6600;"><b>兩個人同時</b><b>用近端</b><b>並同時上傳檔案，但有合併衝突怎麼辦</b></span></p>
-<p> 先將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 合處 (=======)後，儲存並重新進入近端，將之轉成Generapage，最後git add .  gitcommit</p>
-<p>   git push。</p>
-<p><b>4</b><b>.</b><span style="color: #ff6600;"><b>為什麼倉儲會突然找不到網頁，但在遠端還可以看到</b></span></p>
-<p>有可能是因為檔案中又包住另一個git clone 下來的資料，造成程式碼衝突，因而，使得變成404網頁。</p>
-<p><span style="color: #ff0000;"> * 處理方式:建議不要將檔案連續包夾在同一個資料夾裡面。</span></p>
-<p><b>5.</b><span style="color: #ff6600;"><b>為什麼更改字型但是網頁爆掉</b></span></p>
-<p>由於前後自行更改大小不一，因而造成網頁爆掉，需要到SciTE去刪除設定大小的前後(head3)</p>
-<p>即可救回網頁。 P.S.建議不要隨便更改字型大小。</p>
-<p><b>6.</b><span style="color: #ff6600;"><b>網頁爆掉如何救回</b></span></p>
-<p>檢視問題點在哪行程式碼，將之移除，並重新檢視、送出，以下為指令:</p>
-<p><span style="color: #ff0000;">Git log</span>(查看從最近到最遠得提交日誌)</p>
-<p><span style="color: #ff0000;">Git checkout 7碼</span>(丟棄工作區文檔的修改)</p>
-<p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p>
-<p><span style="color: #ff0000;">Git diff</span> (查看修改的文檔內容)</p>
-<p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p>
-<p><span style="color: #ff0000;">Git stash</span>(將寫到一半的代碼從工作區拿走存起來)</p>
-<p><span style="color: #ff0000;">Git status</span>(查看當前git倉儲狀態)</p>
-<p>期末問題</p>
-<p>1.<span style="color: #ff6600;">新版與舊版倉儲產生倉儲</span></p>
-<p>將舊版倉儲一律改版成新版，在原先舊版資料檔中保存config目錄，之後將新版倉儲資料複製撇除git檔全部覆蓋後，重新進入近端推送變更資料後即可解決衝突問題。</p>
-<p><span style="color: #ff0000;">補:假如沒有去做更新改版的動作，可能會導致資料推送不完整或是push不上去的問題。</span></p>
-<p><span style="color: #ff0000;">可參考以下影片操作</span></p>
-<p><span style="color: #ff0000;"><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/ale9u-cqaTo" width="600"></iframe></span></p>
-<p>2.<span style="color: #ff6600;">資料推送不上去</span></p>
-<p><span style="color: #ff6600;"><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/WsSrPQftyN8" width="600"></iframe></span></p>
-<p>可參考以下應片來解決，最有影響的部分可能在於近端遠端沒有做統一彙整成一樣的，導致資訊核對時產生錯誤，應使用git pull解決，之後再確認其他部分是否成立，並commit，即可解決此問題。</p>
-<p><img alt="" height="178" src="./../images/191919.png" width="600"/></p>
-<p>(圖為push產生問題範例)</p>
-<p>3.<span style="color: #ff6600;">組別倉儲在推送後其他組員也剛好在改版，因而產生版面衝突</span></p>
-<p>在新版推送完畢後，組員使用舊版要推送之時產生衝突，會有一些指示建議你，大概會使用到....</p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">git pull</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">git commit</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">git status</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">git add .</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">git merge</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">這些指令會一直無限循環到推送完成。</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;"><img alt="" height="282" src="./../images/181818.png" width="600"/></span></span></p>
-<p>將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 合處 (=======)後儲存，<span style="color: #ff6600;"><span style="color: #000000;">之後再次確認是否改版，進入近端查看發現會有一些地方重複而產生錯誤版面，去編輯將重複的資訊刪除再重新推送，即可完成最新版的倉儲。</span></span></p>
-<p><span style="color: #ff6600;"><span style="color: #000000;">4.<span style="color: #ff6600;">資料上傳不上去導至網頁錯誤的原因</span></span></span></p>
-<p>Y:\&gt;cd project</p>
-<p>Y:\project&gt;dir</p>
-<p>Y:\project&gt;cd cmstest&gt;更換目錄到contest</p>
-<p><span data-blogger-escaped-style="background-color: white;">Y:\project\cmstest&gt;python wsgi.py</span></p>
-<p><span data-blogger-escaped-style="background-color: white;">進入address可改版，一˙但改版可進行版次推送</span></p>
-<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">Login完week2打入根據[...網址...]完成ungit的配置，按github page，回到ungit網頁，push上去。</span></p>
-<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">假如網頁出現錯誤:</span></p>
-<p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">由於沒有在Home底下有對應的git config</span></p>
-<p><span data-blogger-escaped-style="background-color: white;">Home(外部)    Home_cadlab(內部)</span></p>
-<p><span data-blogger-escaped-style="background-color: white;">先檢查有無gitconfig!</span></p><br />Html 原始碼 << <a href='Html 原始碼.html'>Previous</a> <a href='進階挑戰.html'>Next</a> >> 進階挑戰</div>
+    <div id="tipue_search_content">設定路徑說明 << <a href='設定路徑說明.html'>Previous</a> <a href='已知錯誤.html'>Next</a> >> 已知錯誤<br /><h1>新建批次檔步驟</h1>
+<p>Q<span style="color: #ff6600;">如何建立批次檔</span>?</p>
+<p></p>
+<p><span style="color: #ff6600;">Step1</span>；去SciTe新建檔案&gt;將程式複製貼上 &gt;Save as 在隨身碟Y槽</p>
+<p>     </p>
+<p>             [為了與ungit作區別，因此將其名稱為kungit.bat]&gt;從可攜home找出對應的git</p>
+<p>              設定</p>
+<p></p>
+<p><span style="color: #ff6600;">Step2</span>:去隨身碟Y槽&gt;home&gt;查看有無git設定&gt;沒有的話測試程式碼能否運作&gt;git clone測試網頁</p>
+<p></p>
+<p>打開ungit在CMS下面的各時間提交之內容&gt;[進入測試網頁&gt;打kungit指令]</p>
+<p>       </p>
+<p>           <span style="color: #ff0000;">條件</span>:  1.必須在某個git倉儲下指令(cd....)&gt;目的為由Chrom開啟</p>
+<p></p>
+<p>                      2.必須啟動ungit對應的的\批次檔。</p>
+<p>             為了確保關閉nodejs不干擾運作，下載process explorer ，取64....的Z複製下來，貼在y槽以便隨時關閉程式。</p>
+<p>找到在最下面的綠色node按右鍵kill process&gt;把nodejs上次對應的8443的批次檔關閉，指令便可正常運作。(即可不會抱怨。)</p>
+<p>刪除nodejs之8443的批號後，重新打入kungit指令即可看到ungit網頁跳出。</p>
+<p>             </p>
+<div>
+<div>
+<p><span data-blogger-escaped-style="background-color: white;">    </span></p>
+<p></p>
+<p>         </p>
+<p>         </p>
+</div>
+</div>
+<p></p><br />設定路徑說明 << <a href='設定路徑說明.html'>Previous</a> <a href='已知錯誤.html'>Next</a> >> 已知錯誤</div>
         
     <!-- footer -->
       <div class="container">
