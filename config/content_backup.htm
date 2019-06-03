@@ -595,7 +595,12 @@ COPY TO CLIPBOARD	</pre>
 <p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">假如網頁出現錯誤:</span></p>
 <p><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;"><br/></span><span data-blogger-escaped-style="background-color: white;">由於沒有在Home底下有對應的git config</span></p>
 <p><span data-blogger-escaped-style="background-color: white;">Home(外部)    Home_cadlab(內部)</span></p>
-<p><span data-blogger-escaped-style="background-color: white;">先檢查有無gitconfig!</span></p><h1>進階挑戰</h1>
+<p><span data-blogger-escaped-style="background-color: white;">先檢查有無gitconfig!</span></p>
+<p><span data-blogger-escaped-style="background-color: white;">5.<span style="color: #ff6600;">為何在編輯網頁時同樣標題會產生衝突</span></span></p>
+<p><span data-blogger-escaped-style="background-color: white;">由於程式無法判別先後順序，因此產生錯亂，假設要編輯時會出現以下範例模樣</span></p>
+<p><span data-blogger-escaped-style="background-color: white;"><img alt="" height="263" src="/images/41.png" width="600"/><img alt="" height="263" src="/images/42.png" width="600"/></span></p>
+<p><span style="color: #ff0000;">解決辦法:刪除產生衝突之字眼或更改，儲存完成便會回復原本頁面。</span></p>
+<p><img alt="" height="270" src="/images/43.png" width="600"/></p><h1>進階挑戰</h1>
 <p>挑戰更加困難也繁瑣的操作.</p>
 <p><img alt="" height="400" src="/images/.pic-36.jpg" width="652"/></p>
 <p>.</p><h2>設定路徑說明</h2>
@@ -675,24 +680,45 @@ COPY TO CLIPBOARD	</pre>
 <p>             為了確保關閉nodejs不干擾運作，下載process explorer ，取64....的Z複製下來，貼在y槽以便隨時關閉程式。</p>
 <p>找到在最下面的綠色node按右鍵kill process&gt;把nodejs上次對應的8443的批次檔關閉，指令便可正常運作。(即可不會抱怨。)</p>
 <p>刪除nodejs之8443的批號後，重新打入kungit指令即可看到ungit網頁跳出。</p>
-<h2>Virtualbox下載步驟</h2>
-<p>1.搜尋Virtualbox[關鍵字，點進去會是這個畫面</p>
+<h2>Virtualbox介紹</h2>
+<p><img alt="" height="171" src="/images/40.png" width="296"/></p>
+<p><span style="color: #ff0000;">能夠安裝多個客戶端作業系統，每個客戶端系統皆可獨立開啟、暫停與停止。</span></p>
+<p><span style="color: #993300;">主端作業系統與客戶端作業系統皆能相互通訊，多個作業系統同時運行的環境，也彼此能夠同時使用網路。</span></p>
+<ul>
+<li>支援64位元客戶端作業系統，即使主機使用<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/32%E4%BD%8D" title="32位元">32位元</a><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/CPU" title="CPU">CPU</a>(6.0版後主機僅支援64位元作業系統)<sup class="reference" id="cite_ref-5"><a href="https://zh.wikipedia.org/wiki/VirtualBox#cite_note-5">[5]</a></sup></li>
+<li>支援<a href="https://zh.wikipedia.org/wiki/SATA" title="SATA">SATA</a>硬碟<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/NCQ" title="NCQ">NCQ</a>技術</li>
+<li>虛擬硬碟快照</li>
+<li>無縫視窗模式（須安裝客戶端驅動程式）</li>
+<li>能夠在主機端與客戶端共用剪貼簿（須安裝客戶端驅動）</li>
+<li>在主機端與客戶端間建立共用資料夾（須安裝客戶端驅動）</li>
+<li>內建遠端桌面伺服器</li>
+<li>支援VMware VMDK磁碟檔及Virtual PC VHD磁碟檔格式</li>
+<li>3D虛擬化技術支援OpenGL（2.1版後支援）、Direct3D（3.0版後支援）、WDDM（4.1版後支援）</li>
+<li>最多虛擬32顆<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/CPU" title="CPU">CPU</a>（3.0版後支援）</li>
+<li>支援VT-x與AMD-V硬體虛擬化技術</li>
+<li>iSCSI支援</li>
+<li>USB與USB2.0支援</li>
+</ul>
+<p><span style="color: #ff6600;">總結:虛擬電腦可增加操作城市的便利性。</span></p>
+<p></p>
+<p></p><h2>Virtualbox下載步驟</h2>
+<p>1.<span style="color: #ff0000;">搜尋Virtualbox[關鍵字，點進去會是這個畫面</span></p>
 <p><img alt="" height="263" src="/images/323232.png" width="600"/></p>
-<p>2.之後點入Download <span>Virtualbox6.的綠色大框，出現畫面點選紅框內的下載連結</span></p>
+<p>2.<span style="color: #ff0000;">之後點入Download Virtualbox6.的綠色大框，出現畫面點選紅框內的下載連結</span></p>
 <p><span><img alt="" height="276" src="/images/323232-1.png" width="600"/></span></p>
-<p><span>3.下載好後開啟Virtualbox</span></p>
+<p><span>3.<span style="color: #ff0000;">下載好後開啟Virtualbox</span></span></p>
 <p><span><img alt="" height="372" src="/images/40.png" width="600"/></span></p>
 <p><span><img alt="" height="483" src="/images/35.png" width="618"/></span></p>
 <p><span>                                                                                                                      (圖例)</span></p>
-<p><span>4.點選下一步，選取放置位置</span></p>
+<p><span>4.<span style="color: #ff0000;">點選下一步，選取放置位置</span></span></p>
 <p><span><img alt="" height="483" src="/images/36.png" width="618"/></span></p>
-<p><span>5點選下一步，選取以下選項</span></p>
+<p><span>5.<span style="color: #ff0000;">點選下一步，選取以下選項</span></span></p>
 <p><span><img alt="" height="483" src="/images/37.png" width="618"/></span></p>
-<p><span>6.點選下一步來到安裝頁面</span></p>
+<p><span>6.<span style="color: #ff0000;">點選下一步來到安裝頁面</span></span></p>
 <p><span><img alt="" height="483" src="/images/38.png" width="618"/></span></p>
-<p><span>開始安裝畫面出現</span></p>
+<p><span style="color: #ff0000;">開始安裝畫面出現</span></p>
 <p><span><img alt="" height="483" src="/images/39.png" width="618"/></span></p>
-<p><span>7.完成安裝 </span></p>
+<p><span>7.<span style="color: #ff0000;">完成安裝 </span></span></p>
 <p><span></span></p><h2>VirtualBox操作步驟</h2>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/aDRXxs25UYM" width="600"></iframe></p>
 <p><span>1.</span><span>先下載軟件安裝</span></p>
@@ -724,13 +750,40 @@ COPY TO CLIPBOARD	</pre>
 <p><img alt="" height="361" src="/images/232323.png" width="600"/></p>
 <p>分別有兩個網頁需開啟</p>
 <p><img alt="" height="361" src="/images/242424.png" width="600"/></p>
+<h2>Virtualbox操作運用與老師講解</h2>
+<p>如需更加了解virtualboa的由來與詳細的介紹，以下有老師親自介紹的影片</p>
+<p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/sFU7TD1gQhs" width="500"></iframe></p>
+<p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/pwjbInbJCdw" width="500"></iframe></p>
+<p>簡述內容:</p>
+<p><span style="color: #3366ff;">Virtualbox以虛擬程式建立fossil scm軟體，以便不以近端來更新資訊。</span></p>
+<p><span>例如:置身在無網路的國家中，手持平板即可操作Virtualbox，最後到有網路的區域將資訊一併推送到雲端更新。</span></p>
+<p><span style="color: #ff0000;">Virtualbox連接方式分成三種</span></p>
+<p>1.<span style="color: #ff6600;">NAT</span>&gt;對外開放</p>
+<p>2.<span style="color: #ff6600;">Birdged Adapter</span>&gt;互相連結</p>
+<p>3.<span style="color: #ff6600;">Host-only Adapter</span>&gt;只有自己能連接</p>
+<p><span><span style="color: #ff0000;">Virtualbox scope</span>&gt;為變數有效範圍，函數外是全域函數。</span></p>
+<p><span>Virtualbox的按鍵解說:</span></p>
+<p><span><span style="color: #008000;">K</span>&gt;上</span></p>
+<p><span><span style="color: #008000;">J</span>&gt;下</span></p>
+<p><span><span style="color: #008000;">H</span>&gt;左</span></p>
+<p><span><span style="color: #008000;">L</span>&gt;右</span></p>
+<p><b> </b></p><h2>Fossil介紹</h2>
+<p><b>為</b><a href="https://zh.wikipedia.org/wiki/DOS" title="DOS">DOS</a>年代的驅動程式界面，為電腦提供穩定及容易使用的通訊界面。</p>
+<p><span style="color: #ff6600;">主要用於運行<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E8%A9%B1" style="color: #ff6600;" title="電話">電話</a><a href="https://zh.wikipedia.org/wiki/BBS" style="color: #ff6600;" title="BBS">BBS</a>系統的微機，</span>由於當年DOS系統簡陋的設計，使到程序開發者要使用<a href="https://zh.wikipedia.org/wiki/RS-232" title="RS-232">串聯通訊埠</a>的話，必須自行編寫界面。</p>
+<p>為方便通訊程序的開發，當時主要的BBS網路<a href="https://zh.wikipedia.org/wiki/FidoNet" title="FidoNet">FidoNet</a>及其他非商用網路合同開發了這個界面標準，使開發者為網路編寫程序之時更容易。</p>
+<p>現時倖存的網站，大多改用<a class="new" href="https://zh.wikipedia.org/w/index.php?title=NetModem&amp;action=edit&amp;redlink=1" title="NetModem（頁面不存在）">NetModem</a>。</p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p></p>
+<p></p>
 <div>
 <p><span data-blogger-escaped-style="background-color: white;"></span></p>
 <p></p>
 <p>         </p>
 <p>         </p>
 </div>
-<p></p><h1>已知要點</h1>
+<p></p><h1>設計理念</h1>
 <p>1.<span style="color: #ff0000;">設計意圖</span></p>
 <p>2.<span style="color: #ff6600;">設定尺寸or約束</span></p>
 <p>3.<span style="color: #ff9900;">自動推理</span></p>
@@ -741,6 +794,10 @@ COPY TO CLIPBOARD	</pre>
 <p>8.<span style="color: #ff0000;">使用多個草圖區域</span></p>
 <p>9.<span style="color: #ff6600;">基本零件</span></p>
 <p>10.<span style="color: #ff9900;">繪製模型&gt;用於設計意圖</span></p>
-<p>11.<span style="color: #339966;">各種簡單的幾何形狀</span></p>
-<h2>解釋術語</h2>
+<p>11.<span style="color: #339966;">各種簡單的幾何形狀</span></p><h2>Solid Work</h2>
+<h1>期末報告</h1>
+<p><span>每一位學員自我查驗項目:</span><br/><br/><span>1. 是否在第十七週上課前完成個人至多 5 分鐘的期末報告影片, 上傳至以學號登錄的 Youtube 帳號下, 並分別嵌入個人網站中, 且標題分別為:</span><br/><br/><span> <span> </span></span><span><span> </span></span><span>四技部網際內容管理課程</span><br/><br/><span>     國立虎尾科技大學 - 機械設計工程系 - 網際內容管理期末報告 - 學號 - 姓名</span></p>
+<p><span>2. 每一位學員上台進行期末自評簡報時, 必須舉證個人在各週實際完成的 Github 倉儲歷程資料, 說明個人在分組與全班協同過程中所扮演的角色與貢獻, 且依據課程評分比例進行自評.<br/><br/><span>以下為各課程的學員評分比例與評分方式:</span></span></p>
+<p><span><span>評分比例:<br/><br/><span>    學員出席 (20%)</span><br/><br/><span>    電腦組裝與操作系統安裝 (10%) - 以 Virtualbox 虛擬主機配置與設定取代實體安裝</span><br/><br/><span>    網路連線配置與設定  (10%)</span><br/><br/><span>    Github 倉儲與 CMSimfly 配置 (30%)</span><br/><br/><span>    CMSimfly 操作 (20%)</span><br/><br/><span>    CMSimfly 開發 (10%)</span><br/><br/><span>評分方式:</span><br/><br/><span>    WCM 每週自評與互評表單:<span> </span></span><a href="https://goo.gl/forms/gExeWw3JIrenXi453">https://goo.gl/forms/gExeWw3JIrenXi453</a><br/><br/><span>    學員自我評量 (30%)</span><br/><br/><span>    分組自我評量 (30%)</span><br/><br/><span>    倉儲歷程查驗 (40%)</span><br/></span></span></p>
+<p></p>
 <h4></h4></div></div>
