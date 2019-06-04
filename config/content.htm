@@ -600,7 +600,14 @@ COPY TO CLIPBOARD	</pre>
 <p><span data-blogger-escaped-style="background-color: white;">由於程式無法判別先後順序，因此產生錯亂，假設要編輯時會出現以下範例模樣</span></p>
 <p><span data-blogger-escaped-style="background-color: white;"><img alt="" height="263" src="/images/41.png" width="600"/><img alt="" height="263" src="/images/42.png" width="600"/></span></p>
 <p><span style="color: #ff0000;">解決辦法:刪除產生衝突之字眼或更改，儲存完成便會回復原本頁面。</span></p>
-<p><img alt="" height="270" src="/images/43.png" width="600"/></p><h1>進階挑戰</h1>
+<p><img alt="" height="270" src="/images/43.png" width="600"/></p>
+<p>6.<span style="color: #ff6600;">無法git clone資料</span></p>
+<p><span style="color: #ff0000;">原因:</span></p>
+<p><span style="color: #ff0000;">1</span>&gt;git不能執行</p>
+<p><span style="color: #ff0000;">2</span>&gt;git可以執行，倉儲不對</p>
+<p><span style="color: #ff0000;">3</span>&gt;git可執行，倉儲對，數字不對 </p>
+<p>以上幾點設定路徑與位置都用好基本上可以下載成功。</p>
+<p></p><h1>進階挑戰</h1>
 <p>挑戰更加困難也繁瑣的操作.</p>
 <p><img alt="" height="400" src="/images/.pic-36.jpg" width="652"/></p>
 <p>.</p><h2>設定路徑說明</h2>
@@ -680,8 +687,10 @@ COPY TO CLIPBOARD	</pre>
 <p>             為了確保關閉nodejs不干擾運作，下載process explorer ，取64....的Z複製下來，貼在y槽以便隨時關閉程式。</p>
 <p>找到在最下面的綠色node按右鍵kill process&gt;把nodejs上次對應的8443的批次檔關閉，指令便可正常運作。(即可不會抱怨。)</p>
 <p>刪除nodejs之8443的批號後，重新打入kungit指令即可看到ungit網頁跳出。</p>
-<h2>Virtualbox介紹</h2>
-<p><img alt="" height="171" src="/images/40.png" width="296"/></p>
+<h2>Virtualbox老師主旨</h2>
+<p><img alt="" height="250" src="/images/51.png" width="600"/></p>
+<p><span style="color: #ff6600;">利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span><span><span style="color: #ff0000;">1</span>. 安裝最新版的 Virtualbox</span><br/><span><span style="color: #ff0000;">2</span>. 建立 Ubuntu 18.04 虛擬主機</span><br/><span><span style="color: #ff0000;">3</span>. 以網路卡橋接啟動 Ubuntu 伺服器</span><br/><span><span style="color: #ff0000;">4</span>. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</span><br/><span><span style="color: #ff0000;">5</span>. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span><br/><span><span style="color: #ff0000;">6</span>. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span><br/><span><span style="color: #ff0000;">7</span>. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</span><br/><span><span style="color: #ff0000;">8</span>. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</span><br/><span><span style="color: #ff0000;">9</span>. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/><span><span style="color: #ff0000;">10</span>. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</span><br/><span><span style="color: #ff0000;">11</span>. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</span><br/><span><span style="color: #ff0000;">12</span>. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.</span><br/><span><span style="color: #ff0000;">13</span>. 以上相關網際內容管理在機械工程相關應用可參考: </span><span style="color: #ff6600;"><a href="https://www.driveworks.co.uk/" style="color: #ff6600;">https://www.driveworks.co.uk</a> 或 <a href="https://robotbenchmark.net/" style="color: #ff6600;">https://robotbenchmark.net/</a></span></p></div></div><h3>Virtualbox介紹</h3>
+<p><img alt="" height="338" src="/images/52.png" width="600"/></p>
 <p><span style="color: #ff0000;">能夠安裝多個客戶端作業系統，每個客戶端系統皆可獨立開啟、暫停與停止。</span></p>
 <p><span style="color: #993300;">主端作業系統與客戶端作業系統皆能相互通訊，多個作業系統同時運行的環境，也彼此能夠同時使用網路。</span></p>
 <ul>
@@ -701,7 +710,7 @@ COPY TO CLIPBOARD	</pre>
 </ul>
 <p><span style="color: #ff6600;">總結:虛擬電腦可增加操作城市的便利性。</span></p>
 <p></p>
-<p></p><h2>Virtualbox下載步驟</h2>
+<p></p><h3>Virtualbox下載步驟</h3>
 <p>1.<span style="color: #ff0000;">搜尋Virtualbox[關鍵字，點進去會是這個畫面</span></p>
 <p><img alt="" height="263" src="/images/323232.png" width="600"/></p>
 <p>2.<span style="color: #ff0000;">之後點入Download Virtualbox6.的綠色大框，出現畫面點選紅框內的下載連結</span></p>
@@ -719,7 +728,8 @@ COPY TO CLIPBOARD	</pre>
 <p><span style="color: #ff0000;">開始安裝畫面出現</span></p>
 <p><span><img alt="" height="483" src="/images/39.png" width="618"/></span></p>
 <p><span>7.<span style="color: #ff0000;">完成安裝 </span></span></p>
-<p><span></span></p><h2>VirtualBox操作步驟</h2>
+<p><span></span></p><h3>VirtualBox操作步驟</h3>
+<p>w12</p>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/aDRXxs25UYM" width="600"></iframe></p>
 <p><span>1.</span><span>先下載軟件安裝</span></p>
 <p><span><img alt="" height="322" src="/images/202020.png" width="600"/></span></p>
@@ -750,7 +760,8 @@ COPY TO CLIPBOARD	</pre>
 <p><img alt="" height="361" src="/images/232323.png" width="600"/></p>
 <p>分別有兩個網頁需開啟</p>
 <p><img alt="" height="361" src="/images/242424.png" width="600"/></p>
-<h2>Virtualbox操作運用與老師講解</h2>
+<p><span style="color: #ff6600;">w15-</span><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">重新安裝Virtualbox配置設定</yt-formatted-string></p>
+<p><iframe allowfullscreen="allowfullscreen" height="400" src="//www.youtube.com/embed/_0BUPybmwP0" width="600"></iframe></p><h3>Virtualbox操作運用與老師講解</h3>
 <p>如需更加了解virtualboa的由來與詳細的介紹，以下有老師親自介紹的影片</p>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/sFU7TD1gQhs" width="500"></iframe></p>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/pwjbInbJCdw" width="500"></iframe></p>
@@ -767,11 +778,18 @@ COPY TO CLIPBOARD	</pre>
 <p><span><span style="color: #008000;">J</span>&gt;下</span></p>
 <p><span><span style="color: #008000;">H</span>&gt;左</span></p>
 <p><span><span style="color: #008000;">L</span>&gt;右</span></p>
-<p><b> </b></p><h2>Fossil介紹</h2>
+<p><span>Tab or上下&gt;選擇</span></p>
+<p>space鍵[x]Install//OpenSSH</p>
+<p>Sudo apt install nginx&gt;1.動能配置 2.開機前設定網路(Bridged Real...)</p>
+<p><span>Sudo(管理員身分)      nginx(3W伺服)</span></p><h2>Fossil介紹</h2>
 <p><b>為</b><a href="https://zh.wikipedia.org/wiki/DOS" title="DOS">DOS</a>年代的驅動程式界面，為電腦提供穩定及容易使用的通訊界面。</p>
 <p><span style="color: #ff6600;">主要用於運行<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E8%A9%B1" style="color: #ff6600;" title="電話">電話</a><a href="https://zh.wikipedia.org/wiki/BBS" style="color: #ff6600;" title="BBS">BBS</a>系統的微機，</span>由於當年DOS系統簡陋的設計，使到程序開發者要使用<a href="https://zh.wikipedia.org/wiki/RS-232" title="RS-232">串聯通訊埠</a>的話，必須自行編寫界面。</p>
 <p>為方便通訊程序的開發，當時主要的BBS網路<a href="https://zh.wikipedia.org/wiki/FidoNet" title="FidoNet">FidoNet</a>及其他非商用網路合同開發了這個界面標準，使開發者為網路編寫程序之時更容易。</p>
 <p>現時倖存的網站，大多改用<a class="new" href="https://zh.wikipedia.org/w/index.php?title=NetModem&amp;action=edit&amp;redlink=1" title="NetModem（頁面不存在）">NetModem</a>。</p>
+<h3>Fossil術語解釋</h3>
+<p>虎科VPN(校外用)&gt;<span style="color: #ff6600;">https://sslvpn9.twaien.net/nfu</span></p>
+<p><span></span>為何使用intel cpu vt&gt;由於需求為64G，但實際只有32G供應不了，因此採用<span>intel cpu vt以滿足我們的需求量。</span></p>
+<p><span></span></p>
 <p><span></span></p>
 <p><span></span></p>
 <p><span></span></p>
@@ -784,6 +802,7 @@ COPY TO CLIPBOARD	</pre>
 <p>         </p>
 </div>
 <p></p><h1>設計理念</h1>
+<p><img alt="" height="225" src="/images/50.jpg" width="225"/></p>
 <p>1.<span style="color: #ff0000;">設計意圖</span></p>
 <p>2.<span style="color: #ff6600;">設定尺寸or約束</span></p>
 <p>3.<span style="color: #ff9900;">自動推理</span></p>
@@ -801,4 +820,4 @@ COPY TO CLIPBOARD	</pre>
 <p><span><span style="color: #ff0000;">2</span>. 每一位學員<span style="color: #ff6600;">上台進行期末自評簡報</span>時, 必須<span style="color: #ff6600;">舉證個人在各週實際完成的 Github 倉儲歷程資料, 說明個人在分組與全班協同過程中所扮演的角色與貢獻</span>, 且依據課程評分比例進行自評.<br/><br/><span>以下為各課程的學員評分比例與評分方式:</span></span></p>
 <p><span><span><span style="color: #ff0000;">評分比例</span>:<br/><br/><span>    學員出席 (20%)</span><br/><br/><span>    電腦組裝與操作系統安裝 (<span style="color: #ff0000;">10%</span>) - 以 Virtualbox 虛擬主機配置與設定取代實體安裝</span><br/><br/><span>    網路連線配置與設定  (<span style="color: #ff0000;">10%</span>)</span><br/><br/><span>    Github 倉儲與 CMSimfly 配置 (<span style="color: #ff0000;">30%</span>)</span><br/><br/><span>    CMSimfly 操作 (<span style="color: #ff0000;">20%</span>)</span><br/><br/><span>    CMSimfly 開發 (<span style="color: #ff0000;">10%</span>)</span><br/><br/><span><span style="color: #ff0000;">評分方式</span>:</span><br/><br/><span>    WCM 每週自評與互評表單:<span style="color: #ff0000;"> </span></span><span style="color: #ff0000;"><a href="https://goo.gl/forms/gExeWw3JIrenXi453" style="color: #ff0000;">https://goo.gl/forms/gExeWw3JIrenXi453</a></span><br/><br/><span>    學員自我評量 (<span style="color: #ff0000;">30%</span>)</span><br/><br/><span>    分組自我評量 (<span style="color: #ff0000;">30%</span>)</span><br/><br/><span>    倉儲歷程查驗 (<span style="color: #ff0000;">40%</span>)</span><br/></span></span></p>
 <p></p>
-<h4></h4></div></div>
+<h4></h4>
