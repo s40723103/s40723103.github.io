@@ -690,7 +690,7 @@ COPY TO CLIPBOARD	</pre>
 <h2>Virtualbox老師主旨</h2>
 <p><img alt="" height="250" src="/images/51.png" width="600"/></p>
 <p><span style="color: #ff6600;">利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span><span><span style="color: #ff0000;">1</span>. 安裝最新版的 Virtualbox</span><br/><span><span style="color: #ff0000;">2</span>. 建立 Ubuntu 18.04 虛擬主機</span><br/><span><span style="color: #ff0000;">3</span>. 以網路卡橋接啟動 Ubuntu 伺服器</span><br/><span><span style="color: #ff0000;">4</span>. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</span><br/><span><span style="color: #ff0000;">5</span>. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span><br/><span><span style="color: #ff0000;">6</span>. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span><br/><span><span style="color: #ff0000;">7</span>. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</span><br/><span><span style="color: #ff0000;">8</span>. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</span><br/><span><span style="color: #ff0000;">9</span>. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/><span><span style="color: #ff0000;">10</span>. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</span><br/><span><span style="color: #ff0000;">11</span>. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</span><br/><span><span style="color: #ff0000;">12</span>. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.</span><br/><span><span style="color: #ff0000;">13</span>. 以上相關網際內容管理在機械工程相關應用可參考: </span><span style="color: #ff6600;"><a href="https://www.driveworks.co.uk/" style="color: #ff6600;">https://www.driveworks.co.uk</a> 或 <a href="https://robotbenchmark.net/" style="color: #ff6600;">https://robotbenchmark.net/</a></span></p></div></div><h3>Virtualbox介紹</h3>
-<p><img alt="" height="338" src="/images/52.png" width="600"/></p>
+<p><img alt="" height="250" src="/images/51.png" width="600"/></p>
 <p><span style="color: #ff0000;">能夠安裝多個客戶端作業系統，每個客戶端系統皆可獨立開啟、暫停與停止。</span></p>
 <p><span style="color: #993300;">主端作業系統與客戶端作業系統皆能相互通訊，多個作業系統同時運行的環境，也彼此能夠同時使用網路。</span></p>
 <ul>
@@ -760,8 +760,40 @@ COPY TO CLIPBOARD	</pre>
 <p>分別有兩個網頁需開啟</p>
 <p><img alt="" height="361" src="/images/242424.png" width="600"/></p><h3>Virtualbox 重新安裝配置(W15)</h3>
 <p><iframe allowfullscreen="allowfullscreen" height="400" src="//www.youtube.com/embed/_0BUPybmwP0" width="600"></iframe></p>
-<p>1.先下載更新Virtualbox6.0版本，將<span>Virtualbox開啟，新增一個虛擬主機'。</span></p>
-<p><span></span></p>
+<p>1.先下載更新Virtualbox6.0版本，將<span>Virtualbox開啟，新增一個虛擬主機，名稱為"ub-2</span></p>
+<p><span><img alt="" height="331" src="/images/60.png" width="600"/></span></p>
+<p><span>2.建立虛擬主機開始點選選項</span></p>
+<p><span><img alt="" height="459" src="/images/61.png" width="499"/></span></p>
+<p><span><img alt="" height="431" src="/images/62.png" width="498"/></span></p>
+<p><span><img alt="" height="471" src="/images/63.png" width="500"/></span></p>
+<p><span style="color: #ff0000;">註:變更為500GB</span></p>
+<p><span><img alt="" height="515" src="/images/65.png" width="547"/></span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">3</span>.點選設定-&gt;Network-&gt;Bridge...-&gt;Rei....</span></p>
+<p><span><img alt="" height="309" src="/images/66.png" width="393"/></span></p>
+<p><span><span style="color: #ff0000;">4</span>.按開啟綠色箭頭</span></p>
+<p><span style="color: #ff0000;"><img alt="" height="292" src="/images/67.png" width="459"/></span></p>
+<p><span style="color: #ff0000;">註:點選ubuntu檔案已設定</span></p>
+<p><span><img alt="" height="441" src="/images/68.png" width="600"/></span></p>
+<p><span><img alt="" height="527" src="/images/69.png" width="590"/></span></p>
+<p><span style="color: #ff0000;">5</span>.開始12步驟的操作</p>
+<p><span><img alt="" height="511" src="/images/70.png" width="590"/></span></p>
+<p><span><img alt="" height="508" src="/images/71.png" width="590"/></span></p>
+<p><span><img alt="" height="509" src="/images/72.png" width="590"/></span></p>
+<p><span><img alt="" height="508" src="/images/73.png" width="590"/></span></p>
+<p><span><img alt="" height="505" src="/images/74.png" width="590"/></span></p>
+<p><span><img alt="" height="507" src="/images/75.png" width="590"/></span></p>
+<p><span> </span></p>
+<p><span><img alt="" height="506" src="/images/76.png" width="590"/></span></p>
+<p><span><img alt="" height="509" src="/images/77.png" width="590"/></span></p>
+<p><span><img alt="" height="513" src="/images/78.png" width="590"/></span></p>
+<p><span><img alt="" height="508" src="/images/79.png" width="590"/></span></p>
+<p><span style="color: #ff0000;">註:以下為註冊帳號圖例</span></p>
+<p><span><img alt="" height="504" src="/images/80.png" width="590"/></span></p>
+<p><span><img alt="" height="510" src="/images/81.png" width="590"/></span></p>
+<p><span><img alt="" height="510" src="/images/82.png" width="590"/></span></p>
+<p><span><img alt="" height="506" src="/images/83.png" width="590"/></span></p>
+<p><span><span style="color: #ff0000;">6</span>.完成畫面</span></p>
+<p><span><img alt="" height="506" src="/images/84.png" width="590"/></span></p>
 <p><span></span></p><h3>Virtualbox操作運用與老師講解</h3>
 <p>如需更加了解virtualboa的由來與詳細的介紹，以下有老師親自介紹的影片</p>
 <p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/sFU7TD1gQhs" width="500"></iframe></p>
@@ -819,7 +851,17 @@ COPY TO CLIPBOARD	</pre>
 <p>9.<span style="color: #ff6600;">基本零件</span></p>
 <p>10.<span style="color: #ff9900;">繪製模型&gt;用於設計意圖</span></p>
 <p>11.<span style="color: #339966;">各種簡單的幾何形狀</span></p><h2>Solid Work</h2>
-<h1>期末報告評分標準</h1>
+<p><img alt="" height="300" src="/images/solidworks-logo.png" width="600"/></p>
+<p>為機械產業中使用頻率最高的軟體。</p>
+<p>以下為維基百科解說:<span style="color: #ff6600;"><a href="https://zh.wikipedia.org/wiki/SolidWorks" style="color: #ff6600;">https://zh.wikipedia.org/wiki/SolidWorks</a></span></p>
+<p><span><span style="color: #ff0000;">設計意圖是如何創造者的部分要它響應變化和更新</span>。</span></p>
+<p><span style="color: #000000;"><span>SolidWorks的開創能力的用戶回滾透過歷史的一部分，以便進行修改、添加額外的功能或改變順序的操作執行。後來基於特徵的實體建模軟體複製這個想法。</span></span></p>
+<p><span style="color: #000000;"><span>成品操作步驟可參考以下網址:</span></span></p>
+<p><span style="color: #000000;"><span><a href="https://www.solidworks.com/sw/docs/Instructor_WB_2011_CHT.pdf">https://www.solidworks.com/sw/docs/Instructor_WB_2011_CHT.pdf</a></span></span></p>
+<h2><span style="color: #000000;"><span>Inventor</span></span></h2>
+<p><strong><span style="color: #ff6600;"></span></strong></p>
+<p><span style="color: #ff6600;"></span></p>
+<p><span style="color: #ff6600;"></span></p><h1>期末報告評分標準</h1>
 <p><img alt="" height="698" src="/images/wcm.png" width="724"/></p>
 <p><span>每一位學員自我查驗項目:</span><br/><br/><span><span style="color: #ff0000;">1</span>. 是否在第十七週上課前完成個人<span style="color: #ff6600;">至多 5 分鐘的期末報告影片</span>, 上傳至以學號登錄的 Youtube 帳號下, 並分別嵌入個人網站中, 且標題分別為:</span><br/><br/><span> <span> </span></span><span><span> </span></span><span>四技部網際內容管理課程</span><br/><br/><span>     <span style="color: #ff0000;">國立虎尾科技大學 - 機械設計工程系 - 網際內容管理期末報告 - 學號 - 姓名</span></span></p>
 <p><span><span style="color: #ff0000;">2</span>. 每一位學員<span style="color: #ff6600;">上台進行期末自評簡報</span>時, 必須<span style="color: #ff6600;">舉證個人在各週實際完成的 Github 倉儲歷程資料, 說明個人在分組與全班協同過程中所扮演的角色與貢獻</span>, 且依據課程評分比例進行自評.<br/><br/><span>以下為各課程的學員評分比例與評分方式:</span></span></p>
